@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default">
+
+    <property name="lib" value="../Chicago_Top_Condos/dataload/lib"/>
+
+	<target name="default">
+
+		<jar destfile="${lib}/ctc-adwords.jar">
+		  <fileset dir="bin" includes="**/*.class"/>
+          <fileset dir="." includes="adwords_config/*.sql"/>
+		</jar>
+		
+    </target>
+
+</project>    

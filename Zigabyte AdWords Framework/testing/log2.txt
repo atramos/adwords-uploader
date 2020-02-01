@@ -1,0 +1,33 @@
+Discarding repetition of adv ad3 in group group 1
+Creating groups
+Bulk mutate job with id "124621" has status "PENDING".
+Bulk mutate job with id "124621" has status "COMPLETED".
+Bulk mutate result with job id "124621" and part number "0" was retrieved.
+INSERT INTO groups (str_group,id_group) VALUES ('group 1',3121629638)
+Creating keywords
+Bulk mutate job with id "124624" has status "PENDING".
+Bulk mutate job with id "124624" has status "PROCESSING".
+Bulk mutate job with id "124624" has status "COMPLETED".
+Bulk mutate result with job id "124624" and part number "0" was retrieved.
+INSERT INTO keywords (str_group,str_keyword, id_keyword, str_price, str_promo) VALUES ('group 1','k3',12496299,'10.0','9.0')
+INSERT INTO keywords (str_group,str_keyword, id_keyword, str_price, str_promo) VALUES ('group 1','k1',12496300,'10.0','9.0')
+INSERT INTO keywords (str_group,str_keyword, id_keyword, str_price, str_promo) VALUES ('group 1','k2',12496301,'10.0','9.0')
+Creating and/or Updating ads
+Bulk mutate job with id "124627" has status "PENDING".
+Bulk mutate job with id "124627" has status "COMPLETED".
+Bulk mutate result with job id "124627" and part number "0" was retrieved.
+INSERT INTO ads (str_group,str_ad, id_ad,description1, description2, displayUrl, url) VALUES ('group 1','ad4',412042,'desc 3' ,'desc 4' ,'http://www.mysite.com' ,'http://www.mysite.com' )
+INSERT INTO ads (str_group,str_ad, id_ad,description1, description2, displayUrl, url) VALUES ('group 1','ad3',412041,'desc 1' ,'desc 2' ,'http://www.mysite.com' ,'http://www.mysite.com' )
+Updating prices
+Setting standard price to 3121629638
+Setting standard price to 3121629638
+Setting standard price to 3121629638
+Setting standard price to 3121629638
+Setting standard price to 3121629638
+Setting standard price to 3121629638
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496299
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496299
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496300
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496300
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496301
+UPDATE keywords set str_price = '10.0',str_promo = '9.0' WHERE id_keyword = 12496301
